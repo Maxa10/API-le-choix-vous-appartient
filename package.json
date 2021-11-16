@@ -10,10 +10,16 @@
     "type": "git",
     "url": "git+https://github.com/Maxa10/API-le-choix-vous-appartient.git"
   },
-  "author": "",
+  "author": "Maxime Sauvage Damien Bellec",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Maxa10/API-le-choix-vous-appartient/issues"
   },
-  "homepage": "https://github.com/Maxa10/API-le-choix-vous-appartient#readme"
+  "homepage": "https://github.com/Maxa10/API-le-choix-vous-appartient#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.13"
+  }
 }
