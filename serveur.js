@@ -1,4 +1,5 @@
 require("dotenv").config();
+const userRoute = require("./routes/userRoute");
 const express = require("express");
 const app = express();
 const port = process.env.APP || 3500;
@@ -11,10 +12,5 @@ app.listen(port, function(err){
     console.log("server listening on port" + port);
 });
 
-app.get("/",(req,res)=>{ 
-    res.send("ok ça fonctionne")
-});
 
-app.get("/test",(req,res)=>{
-    res.send("test")
-})
+app.use("/api/users", userRoute);
